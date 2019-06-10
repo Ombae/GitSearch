@@ -1,1 +1,242 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    opacity:3.5;
+    background-color: #FAFAFA;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    filter: blur();
+}
+#intro{
+    font-size:22px;
+    text-transform: uppercase;
+    color: white;
+}
+.list-group{
+    padding-top: 19px;
+    margin-right: 61px;
+}
+
+#title{
+    font-size: 20px;
+    color:#02A8F5;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+    #photo{
+    width:398px;
+    height:198px;
+}
+
+.brand{
+    font-size: 5rem;
+    text-align: center;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+    color:#FFF;
+    letter-spacing: 2px;
+}
+.link{
+    color:#FFF;
+}
+
+#search{
+    color:#02A8F9;
+}
+
+nav ul{
+        margin: 150px auto 0;
+        padding: 0;
+        list-style: none;
+        display: table;
+        width: 595px;
+        text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+    color: #00F;
+}
+
+nav ul li:nth-child(1){
+    animation-delay:0s;
+}
+nav ul li:nth-child(2){
+    animation-delay:.5s;
+}
+nav ul li:nth-child(3){
+    animation-delay:1s;
+}
+.effect-box{
+   color:#26C6DA;
+   font-size:98px;
+   text-align:center;
+}
+
+
+nav ul li a {
+
+    margin:0 3rem;
+    position: relative;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color:#26C6DA;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 16px 21px;
+    position: relative;
+}
+
+h2{
+    margin:0 0 10px;
+    padding: 0;
+    color:#26C6DA;
+    font-size: 22px;
+}
+.box{
+    text-align: center;
+    width:490px;
+}
+
+input{
+    display: inline-block;
+    font-size: 19px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+input[type="text"]{
+    background:#fff;
+    width:349px;
+    height: 49px;
+    border:none;
+    outline:none;
+    padding: 0 25px;
+    border-radius:25px 0 0 25px;
+
+
+}
+
+input[type="submit"]{
+    position: relative;
+    border-radius:0 25px 25px 0;
+    width:139px;
+    height: 49px;
+    border:none;
+    outline:none;
+    background:#26C6DA;
+    color:#fff;
+}
+input[type="submit"]:hover{
+    color:#80D8FF;
+    text-transform: uppercase;
+}
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #26C6DA;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 41px;
+      }
+  }
+
+nav ul li a:last-child{
+    margin-right: 0;
+}
+nav ul li a::before,nav ul li a::after{
+
+
+    transform:scaleX(0);
+    transition: all 0.5s
+}
+nav ul li a::before{
+    top:0;
+    transform-origin: left;
+}
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+nav ul li a:hover::before,nav ul li a:hover::after{
+    transform: scaleX(1)
+}
+@keyframes slideIn{
+    from{
+
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+.content{
+    color:#000;
+    background-color:#F5F5F5;
+    width:498px;
+    height:398px;
+    padding:10px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 0.9;
+}
+
+#git{
+    text-align: center;
+    font-size:94px;
+    float: right;
+    color:#4DD0E1;
+}
+#land{
+    font-size:33px;
+}
+.hidden:hover{
+    border-top:2px #0096A8;
+}
+
+.write{
+    border-left:2px #0096A8;
+    border-radius:39px;
+    font-size:40px;
+    color:#000;
+    background: #FFF;
+    padding:39px;
+    padding-right: 19px;
+    border-top:2px solid#0097A7;
+    opacity:0.9;
+    height:250px;
+    width:850px;
+    font-family: 'Tangerine', cursive;
+}
+.about{
+    color:#03A9F4;
+    font-weight: 700
+}
