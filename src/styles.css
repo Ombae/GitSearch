@@ -11,13 +11,13 @@ body{
     filter: blur();
 }
 #intro{
-    font-size:22px;
+    font-size:20px;
     text-transform: uppercase;
     color: white;
 }
 .list-group{
-    padding-top: 19px;
-    margin-right: 61px;
+    padding-top: 20px;
+    margin-right: 60px;
 }
 
 #title{
