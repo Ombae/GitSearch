@@ -164,7 +164,7 @@ a:after {
   }
   @media screen and (max-height: 300px) {
       ul {
-          margin-top: 41px;
+          margin-top: 40px;
       }
   }
 
